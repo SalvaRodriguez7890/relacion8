@@ -100,7 +100,7 @@ function cuerpo(array $colores, string $mensaje, array $error)
 
     <form method="post" action="">
 
-        <p>
+     
             <label for="fondo">Color de fondo:</label>   
             <select name="fondo" id="fondo">
                 <?php foreach (COLORESFONDO as $nombre => $css) { ?>
@@ -112,9 +112,9 @@ function cuerpo(array $colores, string $mensaje, array $error)
                     </option>
                 <?php } ?>
             </select>
-        </p>
+      
 
-        <p>
+       
             <label for="texto">Color del texto:</label>
             <select name="texto" id="texto">
                 <?php foreach (COLORESTEXTO as $nombre => $css) { ?>
@@ -125,7 +125,7 @@ function cuerpo(array $colores, string $mensaje, array $error)
                     </option>
                 <?php } ?>
             </select>
-        </p>
+     
 
     
         <input type="submit" value="Guardar">

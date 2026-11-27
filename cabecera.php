@@ -27,14 +27,6 @@ spl_autoload_register(function ($clase){
 });
 include(RUTABASE."/aplicacion/plantilla/plantilla.php");
 
-//creo la instancia del ACLArray que voy a llamar instACLArray
-$insACLArray = new ACLArray(); 
-
-//ahora tambien creo la instancia del acceso
-$acceso = new Acceso();
-
-
-
 
 
 //Le meto el archivo de la clase RegistroTexto
@@ -43,6 +35,13 @@ require_once(RUTABASE . "/aplicacion/clases/RegistroTexto.php");
 //Incicio la sesión
 
 session_start();
+
+//creo la instancia del ACLArray que voy a llamar instACLArray
+$insACLArray = new ACLArray(); 
+
+//ahora tambien creo la instancia del acceso
+$acceso = new Acceso();
+
 
 
 
