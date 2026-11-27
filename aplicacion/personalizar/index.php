@@ -4,7 +4,7 @@ include_once(dirname(__FILE__) . "/../../cabecera.php");
 
 // ---------------------------- CONTROLADOR ----------------------------
 
-// Leemos el contador anterior de la cookie "visitas". Si no existe (porque es la primera vez) usamos 0.
+// Leo el contador anterior de la cookie "visitas". Si no existe (porque es la primera vez) usamos 0.
 //le meto un "int" por si acaso para forzara que sea número, la cookie siempre llega como texto
 $visitas = (int)($_COOKIE["visitas"] ?? 0);
 

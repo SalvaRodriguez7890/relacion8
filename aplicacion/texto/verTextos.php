@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $textos = []; // Bórrame el array
     }
     
-    // Ahora actualizo la sesión
+    // Ahora actualizo la sesión con el arraytextos con los nuevo que se la metido para cuando sse vuelva a cargar la pagina
     $_SESSION["textos"] = $textos;
 }
 
